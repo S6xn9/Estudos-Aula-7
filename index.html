@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Semântica na HTML5</title>
+</head>
+<body>
+
+  <h1>Semântica da HTML5</h1>
+
+  <h2>1. O que é Semântica em HTML?</h2>
+  <p>A semântica refere-se ao significado dos elementos e do conteúdo. Usar tags semânticas significa representar o propósito real da informação.</p>
+  <ul>
+    <li><strong>Tags não semânticas:</strong> &lt;div&gt;, &lt;span&gt; – genéricas, sem significado estrutural.</li>
+    <li><strong>Tags semânticas:</strong> &lt;header&gt;, &lt;nav&gt;, &lt;article&gt; – informam sobre o tipo de conteúdo.</li>
+  </ul>
+
+  <h2>2. Por que a semântica é importante?</h2>
+  <ul>
+    <li><strong>Acessibilidade:</strong> Leitores de tela interpretam melhor páginas semânticas (ex: &lt;nav&gt;, &lt;article&gt;).</li>
+    <li><strong>SEO:</strong> Motores de busca entendem melhor o conteúdo, melhorando o ranqueamento.</li>
+    <li><strong>Manutenção:</strong> Código mais legível, fácil de entender e colaborar.</li>
+    <li><strong>Compatibilidade:</strong> Segue os padrões da web e melhora a renderização nos navegadores.</li>
+  </ul>
+
+  <h2>3. Principais elementos semânticos</h2>
+
+  <h3>&lt;header&gt;</h3>
+  <p>Representa o cabeçalho de uma seção ou da página.</p>
+  <code>&lt;header&gt;&lt;h1&gt;Meu Blog&lt;/h1&gt;&lt;nav&gt;...&lt;/nav&gt;&lt;/header&gt;</code>
+
+  <h3>&lt;nav&gt;</h3>
+  <p>Seção com links de navegação.</p>
+  <code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;</code>
+
+  <h3>&lt;main&gt;</h3>
+  <p>Conteúdo principal da página, único por documento.</p>
+  <code>&lt;main&gt;&lt;article&gt;...&lt;/article&gt;&lt;/main&gt;</code>
+
+  <h3>&lt;article&gt;</h3>
+  <p>Conteúdo independente, como postagens ou notícias.</p>
+  <code>&lt;article&gt;&lt;h2&gt;Título&lt;/h2&gt;&lt;p&gt;Conteúdo...&lt;/p&gt;&lt;/article&gt;</code>
+
+  <h3>&lt;section&gt;</h3>
+  <p>Agrupa conteúdo relacionado. Pode conter &lt;article&gt; ou estar dentro de um.</p>
+  <code>&lt;section&gt;&lt;h2&gt;Destaques&lt;/h2&gt;&lt;p&gt;Texto...&lt;/p&gt;&lt;/section&gt;</code>
+
+  <h3>&lt;aside&gt;</h3>
+  <p>Conteúdo complementar, como barras laterais ou links relacionados.</p>
+  <code>&lt;aside&gt;&lt;h3&gt;Links Relacionados&lt;/h3&gt;&lt;ul&gt;...&lt;/ul&gt;&lt;/aside&gt;</code>
+
+  <h3>&lt;footer&gt;</h3>
+  <p>Rodapé da seção ou da página.</p>
+  <code>&lt;footer&gt;&lt;p&gt;&copy; 2025 Meu Blog&lt;/p&gt;&lt;/footer&gt;</code>
+
+  <h2>4. Semântica para textos e mídia</h2>
+
+  <h3>&lt;figure&gt; e &lt;figcaption&gt;</h3>
+  <p>Para agrupar e descrever mídias.</p>
+  <code>
+    &lt;figure&gt;<br>
+    &nbsp;&nbsp;&lt;img src="arvore.jpg" alt="Árvore verde"&gt;<br>
+    &nbsp;&nbsp;&lt;figcaption&gt;Uma bela árvore no parque.&lt;/figcaption&gt;<br>
+    &lt;/figure&gt;
+  </code>
+
+  <h3>&lt;time&gt;</h3>
+  <p>Representa datas e horários de forma interpretável.</p>
+  <code>&lt;p&gt;Publicado em &lt;time datetime="2025-07-18"&gt;18 de Julho de 2025&lt;/time&gt;.&lt;/p&gt;</code>
+
+  <h2>5. Dicas finais</h2>
+  <ul>
+    <li>Pense primeiro na estrutura lógica, depois no visual.</li>
+    <li>Use CSS para estilos, não para estrutura.</li>
+    <li>Valide seu HTML com ferramentas como o W3C Validator.</li>
+    <li>&lt;div&gt; e &lt;span&gt; ainda têm seu lugar para estilização e scripts.</li>
+  </ul>
+
+  <h2>Conclusão</h2>
+  <p>Dominar a semântica da HTML5 é essencial para criar páginas acessíveis, bem estruturadas e otimizadas para buscadores.</p>
+
+</body>
+</html>
